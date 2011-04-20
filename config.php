@@ -20,4 +20,4 @@ session_register("login");
 session_register("password");
 session_register("loggedIn");
 ?>
-<pre><?var_dump($_SESSION);var_dump($_POST);?></pre>
+<?//var_dump($_SESSION);var_dump($_POST);?>

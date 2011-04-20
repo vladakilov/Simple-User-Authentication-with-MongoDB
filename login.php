@@ -15,16 +15,39 @@ endif;
 <html>
 <head>
   <title>Simple Authentication with MongoDB</title>
+  <style type="text/css">
+fieldset {
+width:320px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+legend {
+width:100px;
+text-align:center;
+background:#DDE7F0;
+border:solid 1px;
+margin:1px;
+font-weight:bold;
+color:#0000FF;
+}
+</style>
 </head>
 <body>
-<form action="<?=$_SERVER["PHP_SELF"]; ?>" method="POST">
-<table>
-<tr><td>Login:</td><td><input type="text" name="login"
-value="<?= isset($_POST["login"]) ? $_POST["login"] : "" ; ?>"
-maxlength="15"></td></tr>
-<tr><td>Password:</td><td><input type="password" name="password" value="" maxlength="15"></td></tr>
-<tr><td>&nbsp;</td><td><input name="submit" type="submit" value="Submit"></td></tr>
-</table>
-</form>
+	<form name="form1" method="post"action="<?=$_SERVER["PHP_SELF"]; ?>">
+	<fieldset>
+	<legend>Login</legend>
+	<table>
+	<tr>
+	<td><label for="login">Username:</label></td><td><input name="login" value="<?= isset($_POST["login"]) ? $_POST["login"] : "" ; ?>" type="text" id="username" size="30" /></td>
+	</tr>
+	<tr>
+	<td><label for="password">Password:</label></td><td><input name="password" type="password" id="password" size="30" /></td>
+	</tr>
+	<tr>
+	<td class="submit"></td><td><input name="submit" type="submit" value="Submit" /></td>
+	</tr>
+	</table>
+	</fieldset>
+	</form>
 </body>
 </html>
