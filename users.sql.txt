@@ -1,0 +1,14 @@
+-- Filename:	users.sql
+-- Author:		Jez Hancock
+-- Support:		http://forums.munk.me.uk/
+-- Version:		$Id: users.sql.txt 20 2007-04-09 09:40:46Z Jez $
+
+-- Description:
+-- This file contains the table creation data for the simpleauth package.
+
+CREATE TABLE users (
+  id int(5) NOT NULL auto_increment,
+  login varchar(15) DEFAULT '0' ,
+  password varchar(15) DEFAULT '0' ,
+  PRIMARY KEY (id)
+);

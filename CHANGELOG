@@ -1,0 +1,19 @@
+/**********************************************************************
+Filename:	CHANGELOG
+Author:		Jez Hancock
+Support:	http://forums.munk.me.uk/
+Version:	$Id: CHANGELOG 11 2007-04-09 09:37:57Z Jez $
+Description:
+This file contains details about changes made to the SimpleAuth package.
+**********************************************************************/
+
+simpleauth-1.2.tar.gz:
+Added file 'README_WINDOWS.txt'.  Instructions for setting up
+Windows/Apache/MySQL/PHP and SimpleAuth from scratch.
+Added extra comments to every PHP script.
+Added details about forum.
+Removed email address(!).
+Changed session variables from $_SESSION["session"]["bleh"] to $_SESSION["bleh"].
+
+simpleauth-1.1.tar.gz:
+Initial SimpleAuth package.
