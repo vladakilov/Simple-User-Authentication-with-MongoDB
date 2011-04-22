@@ -1,15 +1,15 @@
 <?
 function newUser($login, $password)
 {
-	global $db_users;
-	$db_users->insert(array('login' => $login, 'password' => md5($password)));
+	global $coll;
+	$coll->insert(array('login' => $login, 'password' => md5($password)));
 	return true;
 }
 
 function checkPass($login, $password) 
 {
-	global $db_users;
-	$res = $db_users->findOne(array('login' => $login, 'password' => md5($password)));
+	global $coll;
+	$res = $coll->findOne(array('login' => $login, 'password' => md5($password)));
 	if($res):
 	return true;
 	endif;
